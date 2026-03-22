@@ -1,4 +1,4 @@
-baseURL = 'http://localhost:1313/'
+baseURL = 'https://solohab.com/'
 languageCode = 'tr-tr'
 defaultContentLanguage = 'tr'
 title = 'SoloHab Destek Merkezi'

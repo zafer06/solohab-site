@@ -1,0 +1,29 @@
+<nav class="flex items-center justify-between px-8 py-6 max-w-7xl mx-auto">
+    <div class="text-2xl font-bold tracking-tighter text-brand italic">
+        <a href="/">
+            <img src="/img/solohab.png" alt="Solohab" class="h-8 w-auto" />
+        </a>
+    </div>
+
+    <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}" class="hover:text-brand transition {{ if or ($currentPage.IsMenuCurrent " main" .)
+            ($currentPage.HasMenuCurrent "main" .) }}active{{ end }}">
+            {{ .Name }}
+        </a>
+        {{ end }}
+    </div>
+
+    <div class="flex items-center gap-3">
+        <a href="https://app.solohab.com/login"
+            class="hidden sm:block text-sm font-semibold text-slate-600 px-5 py-2.5 rounded-full hover:text-brand transition-colors duration-300">
+            Giriş Yap
+        </a>
+
+        <a href="https://app.solohab.com/register"
+            class="text-sm font-semibold bg-slate-900 text-white px-6 py-2.5 rounded-full hover:bg-brand shadow-sm hover:shadow-md transition-all duration-300">
+            Ücretsiz Kayıt
+        </a>
+    </div>
+</nav>

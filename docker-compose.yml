@@ -1,0 +1,11 @@
+services:
+  hugo :
+    image: mcr.microsoft.com/devcontainers/base:ubuntu
+    container_name: site_solohab_dev
+    # Konteynırın hemen kapanmaması için sonsuz bir uykuya yatırıyoruz
+    command: sleep infinity
+    volumes:
+      - .:/app
+    ports:
+      - "1313:1313"
+    working_dir: /app

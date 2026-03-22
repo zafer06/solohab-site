@@ -1,0 +1,27 @@
+baseURL = 'http://localhost:1313/'
+languageCode = 'tr-tr'
+defaultContentLanguage = 'tr'
+title = 'SoloHab Destek Merkezi'
+
+[params]
+  description = "SoloHab Pazaryeri Entegrasyonu Yardım Belgeleri"
+
+[[menu.main]]
+    name = "Giriş"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "Destek"
+    url = "/destek/"
+    weight = 2
+
+[[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 3
+
+[[menu.main]]
+    name = "Hakkında"
+    url = "/hakkinda/"
+    weight = 4

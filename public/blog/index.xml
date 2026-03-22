@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on SoloHab Destek Merkezi</title>
+    <link>http://localhost:1313/blog/</link>
+    <description>Recent content in Blog on SoloHab Destek Merkezi</description>
+    <generator>Hugo</generator>
+    <language>tr-tr</language>
+    <lastBuildDate>Sun, 22 Mar 2026 10:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>E-Ticarette Yeni Nesil Yönetim: Solohab ile Tanışın!</title>
+      <link>http://localhost:1313/blog/e-ticarette-yeni-nesil-yonetim-solohab-ile-tanisin/</link>
+      <pubDate>Sun, 22 Mar 2026 10:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/e-ticarette-yeni-nesil-yonetim-solohab-ile-tanisin/</guid>
+      <description>Pazar yerlerinde satış yaparken kaybolmayın. Stoktan kargoya, kategori eşlemeden marka yönetimine kadar tüm süreçleri Solohab ile tek merkezden yönetin.</description>
+    </item>
+  </channel>
+</rss>

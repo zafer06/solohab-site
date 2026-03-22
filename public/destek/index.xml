@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Destek on SoloHab Destek Merkezi</title>
+    <link>http://localhost:1313/destek/</link>
+    <description>Recent content in Destek on SoloHab Destek Merkezi</description>
+    <generator>Hugo</generator>
+    <language>tr-tr</language>
+    <lastBuildDate>Fri, 20 Mar 2026 12:08:36 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/destek/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WooCommerce Mağaza Tanımlama Rehberi</title>
+      <link>http://localhost:1313/destek/wooocommerce-kurulum/</link>
+      <pubDate>Sun, 01 Mar 2026 12:08:36 +0000</pubDate>
+      <guid>http://localhost:1313/destek/wooocommerce-kurulum/</guid>
+      <description>&lt;p&gt;Solohab’ın güçlü stok ve ürün havuzu özelliklerinden faydalanmak için ilk adım, mağazanızı sisteme entegre etmektir. Bu rehberde, WooCommerce mağazanızı Solohab’a nasıl dakikalar içinde tanımlayacağınızı adım adım inceleyeceğiz.&lt;/p&gt;&#xA;&lt;h3 id=&#34;1-mağaza-ayarlarına-erişim&#34;&gt;1. Mağaza Ayarlarına Erişim&lt;/h3&gt;&#xA;&lt;p&gt;Solohab yönetim panelinize giriş yaptıktan sonra, üst menüde yer alan &lt;strong&gt;&amp;ldquo;Ayarlar&amp;rdquo;&lt;/strong&gt; sekmesine tıklayın. Açılan alt menüden &lt;strong&gt;&amp;ldquo;Mağaza Ayarları&amp;rdquo;&lt;/strong&gt; seçeneğine giderek, mevcut mağazalarınızın listelendiği yönetim sayfasına ulaşabilirsiniz.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;woocommerce-kurulum-1.png&#34; alt=&#34;WooCommerce Mağaza Listesi&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;2-yeni-mağaza-ekleme&#34;&gt;2. Yeni Mağaza Ekleme&lt;/h3&gt;&#xA;&lt;p&gt;Mağaza listesi sayfasının sağ üst köşesinde bulunan &lt;strong&gt;&amp;ldquo;Yeni Ekle&amp;rdquo;&lt;/strong&gt; butonuna basın. Karşınıza çıkan pencerede, entegre etmek istediğiniz platform seçeneklerini göreceksiniz. Bu aşamada &lt;strong&gt;WooCommerce&lt;/strong&gt; logolu seçeneği işaretleyerek devam edin.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>N11 Mağaza Tanımlama Rehberi</title>
+      <link>http://localhost:1313/destek/n11-kurulum/</link>
+      <pubDate>Mon, 02 Mar 2026 12:08:36 +0000</pubDate>
+      <guid>http://localhost:1313/destek/n11-kurulum/</guid>
+      <description>&lt;p&gt;Solohab üzerinden n11 mağazanızı yönetmek, ürünlerinizi n11 kataloğuna göndermek ve siparişlerinizi takip etmek için öncelikle n11 API bağlantısını kurmanız gerekmektedir. Bu rehberde, n11 mağazanızı Solohab sistemine nasıl entegre edeceğinizi adım adım göreceğiz.&lt;/p&gt;&#xA;&lt;h3 id=&#34;1-n11-api-bilgilerinin-temin-edilmesi&#34;&gt;1. n11 API Bilgilerinin Temin Edilmesi&lt;/h3&gt;&#xA;&lt;p&gt;n11 entegrasyonu için öncelikle n11 Mağaza Paneli üzerinden API anahtarlarınızı oluşturmalısınız:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;n11 Mağaza Paneli&lt;/strong&gt;ne giriş yapın.&lt;/li&gt;&#xA;&lt;li&gt;Üst menüden &lt;strong&gt;&amp;ldquo;Hesabım&amp;rdquo; &amp;gt; &amp;ldquo;API Hesapları&amp;rdquo;&lt;/strong&gt; sekmesine gidin.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;&amp;ldquo;Yeni API Şifresi Oluştur&amp;rdquo;&lt;/strong&gt; butonuna basarak size özel oluşturulan &lt;strong&gt;API Key (Uygulama Anahtarı)&lt;/strong&gt; ve &lt;strong&gt;API Secret (Uygulama Şifresi)&lt;/strong&gt; bilgilerini not edin.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;Önemli Not:&lt;/strong&gt; n11 güvenlik gereği API şifresini sadece bir kez gösterir ve belirli aralıklarla e-posta onayı isteyebilir. Şifrenizi kaydettiğinizden emin olun.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Trendyol Mağaza Tanımlama Rehberi</title>
+      <link>http://localhost:1313/destek/trendyol-kurulum/</link>
+      <pubDate>Fri, 20 Mar 2026 12:08:36 +0000</pubDate>
+      <guid>http://localhost:1313/destek/trendyol-kurulum/</guid>
+      <description>&lt;p&gt;Solohab üzerinden Trendyol mağazanızı yönetmek, stoklarınızı anlık olarak güncellemek ve sipariş operasyonunuzu hızlandırmak için Trendyol API bağlantısını kurmanız gerekmektedir. Bu rehberde, Trendyol mağazanızı Solohab sistemine nasıl entegre edeceğinizi adım adım inceleyeceğiz.&lt;/p&gt;&#xA;&lt;h3 id=&#34;1-trendyol-api-bilgilerinin-temin-edilmesi&#34;&gt;1. Trendyol API Bilgilerinin Temin Edilmesi&lt;/h3&gt;&#xA;&lt;p&gt;Trendyol entegrasyonu için gerekli olan &amp;ldquo;Satıcı ID&amp;rdquo;, &amp;ldquo;API Key&amp;rdquo; ve &amp;ldquo;API Secret&amp;rdquo; bilgilerine ulaşmak için:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Trendyol Satıcı Paneli&lt;/strong&gt;ne (&lt;a href=&#34;https://partner.trendyol.com&#34;&gt;partner.trendyol.com&lt;/a&gt;) giriş yapın.&lt;/li&gt;&#xA;&lt;li&gt;Sağ üst köşede bulunan &lt;strong&gt;Mağaza Adınıza&lt;/strong&gt; tıklayın ve açılan menüden &lt;strong&gt;&amp;ldquo;Hesap Bilgilerim&amp;rdquo;&lt;/strong&gt; seçeneğine gidin.&lt;/li&gt;&#xA;&lt;li&gt;Sayfanın sağ tarafındaki sekmelerden &lt;strong&gt;&amp;ldquo;Entegrasyon Bilgileri&amp;rdquo;&lt;/strong&gt; kısmına tıklayın.&lt;/li&gt;&#xA;&lt;li&gt;Burada yer alan &lt;strong&gt;Satıcı ID&lt;/strong&gt;, &lt;strong&gt;API Key&lt;/strong&gt; ve &lt;strong&gt;API Secret&lt;/strong&gt; bilgilerini bir kenara not edin veya kopyalayın.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;İpucu:&lt;/strong&gt; Eğer bu alanda bir anahtar görünmüyorsa, &amp;ldquo;Yeni API Şifresi Oluştur&amp;rdquo; butonuna basarak bilgilerinizi anında oluşturabilirsiniz.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Kategori ve Nitelik Eşleme Rehberi</title>
+      <link>http://localhost:1313/destek/kategori-nitelik-esleme/</link>
+      <pubDate>Thu, 12 Mar 2026 14:40:00 +0000</pubDate>
+      <guid>http://localhost:1313/destek/kategori-nitelik-esleme/</guid>
+      <description>&lt;p&gt;Solohab havuzundaki ürünlerinizin pazar yerlerinde (Trendyol, n11 vb.) doğru kategoride ve doğru özelliklerle listelenmesi için &lt;strong&gt;&amp;ldquo;Eşleme&amp;rdquo;&lt;/strong&gt; işlemi hayati önem taşır. Bu makalede, ürünlerinizi pazar yeri standartlarına nasıl uygun hale getireceğinizi öğreneceksiniz.&lt;/p&gt;&#xA;&lt;h3 id=&#34;1-kategori-eşleme-nedir&#34;&gt;1. Kategori Eşleme Nedir?&lt;/h3&gt;&#xA;&lt;p&gt;Her pazar yerinin kendine has bir kategori ağacı vardır. Örneğin; sizin sisteminizdeki &amp;ldquo;Erkek Tişört&amp;rdquo; kategorisi, Trendyol&amp;rsquo;da &amp;ldquo;Erkek &amp;gt; Giyim &amp;gt; Üst Giyim &amp;gt; Tişört&amp;rdquo; yolunu izler.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Ayarlar &amp;gt; Kategori Eşleme&lt;/strong&gt; menüsüne gidin.&lt;/li&gt;&#xA;&lt;li&gt;Sol taraftan &lt;strong&gt;Kendi Kategorinizi&lt;/strong&gt; seçin.&lt;/li&gt;&#xA;&lt;li&gt;Sağ taraftan hedef &lt;strong&gt;Pazar Yerini&lt;/strong&gt; (Örn: n11) seçin.&lt;/li&gt;&#xA;&lt;li&gt;n11 kategori listesinden ürününüze en uygun son kategoriyi bulun ve &lt;strong&gt;&amp;ldquo;Eşleştir&amp;rdquo;&lt;/strong&gt; butonuna basın.&lt;/li&gt;&#xA;&lt;li&gt;Açılan alt panelde, zorunlu alanları (Marka, Renk vb.) kendi verilerinizle eşleyerek &lt;strong&gt;&amp;ldquo;Kaydet&amp;rdquo;&lt;/strong&gt; deyin.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;img src=&#34;kategori-nitelik-esle-1.png&#34; alt=&#34;Kategori Esleme Ekranı&#34;&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

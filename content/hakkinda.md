@@ -1,0 +1,4 @@
++++
+title = "Hakkında"
+layout = "about"
++++

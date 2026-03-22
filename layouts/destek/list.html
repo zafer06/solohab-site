@@ -1,0 +1,39 @@
+{{ define "main" }}
+<section id="destekList" class="py-8">
+    <div class="px-6 max-w-7xl mx-auto">
+        <div class="mb-6">
+            <span
+                class="inline-block py-1.5 px-5 text-sm font-bold tracking-wide text-slate-700 rounded-full border border-slate-200 bg-red-50">
+                Solohab Destek
+            </span>
+        </div>
+
+        <div class="gap-4 mb-6">
+            <div class="gap-4">
+                <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-slate-900">
+                    Bilgi Merkezi
+                </h1>
+            </div>
+        </div>
+
+        <p class="text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl">
+            Operasyonlarınızı hatasız yönetmeniz için hazırladığımız <b>teknik rehberlere</b> buradan ulaşabilirsiniz.
+        </p>
+
+        <hr>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 py-12">
+        <div class="makale-listesi">
+            {{ .Content }} <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px;">
+                {{ range .Pages }}
+                <a href="{{ .Permalink }}" style="padding: 15px; border: 1px solid #ddd; border-radius: 8px; text-decoration: none; color: #333; transition: 0.3s;" onmouseover="this.style.borderColor='#ff6600'" onmouseout="this.style.borderColor='#ddd'">
+                    <strong>{{ .Title }}</strong>
+                    <p style="font-size: 0.8rem; color: #777; margin: 5px 0 0;">Yardım dökümanını görüntüle →</p>
+                </a>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}

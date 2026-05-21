@@ -3,6 +3,8 @@ languageCode = 'tr-tr'
 defaultContentLanguage = 'tr'
 title = 'SoloHab Destek Merkezi'
 
+googleAnalytics = "G-5BSRWP41PJ"
+
 [params]
   description = "SoloHab Pazaryeri Entegrasyonu Yardım Belgeleri"
 

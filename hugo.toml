@@ -24,6 +24,11 @@ googleAnalytics = "G-5BSRWP41PJ"
     weight = 3
 
 [[menu.main]]
+    name = "Ücretler"
+    url = "/price/"
+    weight = 3
+
+[[menu.main]]
     name = "Hakkında"
     url = "/hakkinda/"
     weight = 4

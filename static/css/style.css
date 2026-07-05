@@ -1,3 +1,106 @@
 html {
     scroll-behavior: smooth;
 }
+
+.prose {
+    color: #475569;
+    font-size: 1.125rem;
+    line-height: 1.9;
+    max-width: 100%;
+}
+
+/* Başlıklar */
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4 {
+    color: #0f172a;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.25;
+}
+
+.prose h1 {
+    font-size: 2.5rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.prose h2 {
+    font-size: 2rem;
+    margin-top: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.prose h3 {
+    font-size: 1.5rem;
+    margin-top: 3.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.prose h4 {
+    font-size: 1.25rem;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Paragraflar */
+
+.prose p {
+    margin: 1.4rem 0;
+}
+
+/* Link */
+
+.prose a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.prose a:hover {
+    text-decoration: underline;
+}
+
+/* Liste */
+
+.prose ul,
+.prose ol {
+    margin: 1.5rem 0;
+    padding-left: 1.75rem;
+}
+
+.prose li {
+    margin: 0.7rem 0;
+}
+
+/* Görsel */
+
+.prose img {
+    width: 100%;
+    border-radius: 16px;
+    margin: 3rem 0;
+}
+
+/* Alıntı */
+
+.prose blockquote {
+    border-left: 4px solid #2563eb;
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    color: #334155;
+    font-style: italic;
+}
+
+/* Kod */
+
+.prose pre {
+    margin: 2rem 0;
+    border-radius: 12px;
+    padding: 1.25rem;
+}
+
+.prose code {
+    font-size: 0.95em;
+}

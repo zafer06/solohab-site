@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="tr">
-    <head>
+<head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -9,38 +9,30 @@
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
             rel="stylesheet"
         />
-        <title>{{ .Title }} | {{ .Site.Title }}</title>
+
+        <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+        <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+        <link rel="canonical" href="{{ .Permalink }}" />
 
         <script src="https://cdn.tailwindcss.com"></script>
 
         <link rel="stylesheet" href="/css/style.css" />
         <script src="/js/site.js"></script>
 
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://solohab.com/" />
-        <meta property="og:title" content="Solohab | Pazaryeri Entegrasyonu" />
-        <meta
-            property="og:description"
-            content="Tüm pazaryerlerini tek merkezden yönetin. WooCommerce ve N11 entegrasyonu ile işinizi kolaylaştırın."
-        />
-        <meta
-            property="og:image"
-            content="https://solohab.com/assets/img/og-image.jpeg"
-        />
+        <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+        <meta property="og:url" content="{{ .Permalink }}" />
+        <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}" />
+        <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+        <meta property="og:image" content="{{ if .Params.image }}{{ .Params.image | absURL }}{{ else }}{{ "assets/img/og-image.jpeg" | absURL }}{{ end }}" />
+        <meta property="og:site_name" content="{{ .Site.Title }}" />
+        <meta property="og:locale" content="tr_TR" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:url" content="https://solohab.com/" />
-        <meta name="twitter:title" content="Solohab | Pazaryeri Entegrasyonu" />
-        <meta
-            name="twitter:description"
-            content="Tüm pazaryerlerini tek merkezden yönetin. WooCommerce ve N11 entegrasyonu ile işinizi kolaylaştırın."
-        />
-        <meta
-            name="twitter:image"
-            content="https://solohab.com/assets/img/og-image.jpeg"
-        />
+        <meta name="twitter:url" content="{{ .Permalink }}" />
+        <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}" />
+        <meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+        <meta name="twitter:image" content="{{ if .Params.image }}{{ .Params.image | absURL }}{{ else }}{{ "assets/img/og-image.jpeg" | absURL }}{{ end }}" />
 
-        <!-- Google tag (gtag.js) -->
         <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=G-5BSRWP41PJ"

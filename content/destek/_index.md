@@ -1,5 +1,7 @@
 +++
-date = '2026-03-20T12:13:32Z'
-draft = false
-title = 'Destek'
+title = "Solohab Destek"
+eyebrow = "Solohab Destek"
+heading_accent = "Bilgi"
+heading = "Merkezi"
+intro = "Operasyonlarınızı hatasız yönetmeniz için hazırladığımız **teknik rehberlere** buradan ulaşabilirsiniz"
 +++

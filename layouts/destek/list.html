@@ -1,39 +1,101 @@
 {{ define "main" }}
 <section id="destekList" class="py-8">
     <div class="px-6 max-w-7xl mx-auto">
-        <div class="mb-6">
+        <div class="mb-8">
             <span
-                class="inline-block py-1.5 px-5 text-sm font-bold tracking-wide text-slate-700 rounded-full border border-slate-200 bg-red-50">
-                Solohab Destek
+                class="inline-flex items-center gap-2 py-1.5 px-4 text-xs font-semibold tracking-wider uppercase text-stone-600 rounded-full border border-stone-200 bg-white"
+            >
+                <span class="relative flex h-2 w-2">
+                    <span
+                        class="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75"
+                    ></span>
+                    <span
+                        class="relative inline-flex h-2 w-2 rounded-full bg-red-600"
+                    ></span>
+                </span>
+                {{ .Params.eyebrow }}
             </span>
         </div>
-
-        <div class="gap-4 mb-6">
-            <div class="gap-4">
-                <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-slate-900">
-                    Bilgi Merkezi
-                </h1>
-            </div>
-        </div>
-
-        <p class="text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl">
-            Operasyonlarınızı hatasız yönetmeniz için hazırladığımız <b>teknik rehberlere</b> buradan ulaşabilirsiniz.
+        <h1
+            class="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 mb-5 max-w-3xl"
+        >
+            {{ .Params.heading_accent }}
+            <span class="text-stone-400">{{ .Params.heading }}</span>
+        </h1>
+        <p class="text-lg md:text-xl text-slate-500 leading-relaxed max-w-2xl">
+            {{ .Params.intro | markdownify }}
         </p>
-
-        <hr>
+        <hr class="mt-10 border-slate-200" />
     </div>
 
     <div class="max-w-7xl mx-auto px-6 py-12">
-        <div class="makale-listesi">
-            {{ .Content }} <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px;">
-                {{ range .Pages }}
-                <a href="{{ .Permalink }}" style="padding: 15px; border: 1px solid #ddd; border-radius: 8px; text-decoration: none; color: #333; transition: 0.3s;" onmouseover="this.style.borderColor='#ff6600'" onmouseout="this.style.borderColor='#ddd'">
-                    <strong>{{ .Title }}</strong>
-                    <p style="font-size: 0.8rem; color: #777; margin: 5px 0 0;">Yardım dökümanını görüntüle →</p>
-                </a>
-                {{ end }}
-            </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {{ range .Pages }}
+            <a
+                href="{{ .RelPermalink }}"
+                class="group flex items-center justify-between gap-4 p-6 bg-white rounded-2xl border border-slate-200 transition-all duration-300 hover:border-slate-300 hover:ring-1 hover:ring-slate-300 hover:shadow-md"
+            >
+                <div>
+                    <span
+                        class="inline-block text-[11px] font-semibold text-red-700 bg-red-50 px-2.5 py-1 rounded-full uppercase tracking-wide"
+                    >
+                        {{ .Params.category | default "Genel" }}
+                    </span>
+                    <h3 class="font-bold text-slate-900 mt-2.5">
+                        {{ .Title }}
+                    </h3>
+                    <p class="text-sm text-slate-500 mt-1">
+                        Yardım dökümanını görüntüle
+                    </p>
+                </div>
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="text-slate-300 group-hover:text-slate-900 group-hover:translate-x-1 transition-all shrink-0"
+                >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+            </a>
+            {{ end }}
         </div>
     </div>
-</div>
+
+    <!-- DESTEK BILGI KUTULARI ALT BILGILER -->
+    <div
+        class="mt-16 bg-stone-50 border border-stone-100 rounded-3xl p-10 md:p-14 text-center"
+    >
+        <h2 class="text-2xl font-bold text-slate-900 mb-3">
+            Aradığınızı bulamadınız mı?
+        </h2>
+        <p class="text-stone-500 max-w-md mx-auto mb-8">
+            Ekibimiz, karşılaştığınız her türlü teknik soruda size yardımcı
+            olmaktan mutluluk duyar.
+        </p>
+        <div
+            class="flex flex-col sm:flex-row items-center justify-center gap-4"
+        >
+            <a
+                href="https://wa.me/905511757435"
+                target="_blank"
+                class="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold text-sm px-6 py-3 rounded-full transition-colors"
+            >
+                WhatsApp'tan Yazın
+            </a>
+
+            <a
+                href="mailto:destek@solokod.com"
+                class="inline-flex items-center gap-2 text-stone-600 hover:text-stone-900 font-semibold text-sm px-6 py-3 rounded-full border border-stone-200 hover:border-stone-300 transition-colors"
+            >
+                E-posta Gönderin
+            </a>
+        </div>
+    </div>
+</section>
 {{ end }}

@@ -1,0 +1,34 @@
+{
+  "name": "Hugo Site Geliştirme (Zed)",
+
+  // Mevcut docker-compose dosyanı kullanmasını söylüyoruz
+  "dockerComposeFile": "../docker-compose.yml",
+
+  // docker-compose.yml dosyasındaki servis adı
+  "service": "hugo",
+
+  // Konteynır açıldığında Zed'in bağlanacağı varsayılan çalışma dizini
+  "workspaceFolder": "/app",
+
+  // Zed veya devcontainer araçlarının konteynır içinde ihtiyaç duyacağı temel özellikler
+  "features": {
+    // İleride Hugo'yu güncellemek veya ek araçlar kurmak istersen diye git/curl hazır gelir
+    "ghcr.io/devcontainers/features/common-utils:1": {
+      "configureZshAsDefaultShell": true,
+    },
+  },
+
+  // Konteynır ilk kez oluşturulduğunda veya başlatıldığında çalışacak komutlar
+  // Örneğin: Hugo yüklü değilse otomatik kurulmasını sağlayabilirsin
+  "onCreateCommand": "sudo apt-get update && sudo apt-get install -y hugo",
+
+  // Konteynır içinde kullanmak istediğin (varsa) Zed uzantılarını buraya yazabilirsin
+  "customizations": {
+    "zed": {
+      "extensions": ["html", "toml"],
+    },
+  },
+
+  // Kapatıldığında konteynırın durdurulması için
+  "shutdownAction": "stopCompose",
+}

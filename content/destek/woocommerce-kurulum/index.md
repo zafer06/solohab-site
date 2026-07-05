@@ -1,9 +1,10 @@
----
-date: 2026-03-01T12:08:36Z
-draft: false
-title: 'WooCommerce Mağaza Tanımlama Rehberi'
-weight: 10
----
++++
+date = 2026-03-01T12:08:36Z
+draft = false
+title = 'WooCommerce Mağaza Tanımlama Rehberi'
+category = "Mağaza Kurulumu"
+weight = 10
++++
 
 Solohab’ın güçlü stok ve ürün havuzu özelliklerinden faydalanmak için ilk adım, mağazanızı sisteme entegre etmektir. Bu rehberde, WooCommerce mağazanızı Solohab’a nasıl dakikalar içinde tanımlayacağınızı adım adım inceleyeceğiz.
 

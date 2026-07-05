@@ -1,9 +1,10 @@
----
-title: "N11 Mağaza Tanımlama Rehberi"
-date: 2026-03-02T12:08:36Z
-draft: false
-weight: 20
----
++++
+title = "N11 Mağaza Tanımlama Rehberi"
+category = "Mağaza Kurulumu"
+date = 2026-03-02T12:08:36Z
+draft = false
+weight = 20
++++
 
 Solohab üzerinden n11 mağazanızı yönetmek, ürünlerinizi n11 kataloğuna göndermek ve siparişlerinizi takip etmek için öncelikle n11 API bağlantısını kurmanız gerekmektedir. Bu rehberde, n11 mağazanızı Solohab sistemine nasıl entegre edeceğinizi adım adım göreceğiz.
 

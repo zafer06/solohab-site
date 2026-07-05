@@ -1,4 +1,0 @@
-+++
-title = "Ücretler"
-layout = "price"
-+++

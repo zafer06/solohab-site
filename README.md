@@ -16,3 +16,9 @@ https://solohab.com
 - Kategori ve varyant desteği
 - Sipariş senkronizasyonu
 - Hızlı ve sade yönetim paneli
+
+
+## Gelistirme Ortamı
+```bash
+hugo server --bind 0.0.0.0 --disableFastRender --renderToMemory
+```

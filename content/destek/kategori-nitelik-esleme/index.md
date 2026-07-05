@@ -1,10 +1,11 @@
----
-title: "Kategori ve Nitelik Eşleme Rehberi"
-date: 2026-03-12T14:40:00Z
-draft: false
-weight: 40
-youtube_id: 'dQw4w9WgXcQ' # YouTube video ID'sini buraya yaz 
----
++++
+title = "Kategori ve Nitelik Eşleme Rehberi"
+category = "Ürün İşlemleri"
+date = 2026-03-12T14:40:00Z
+draft = false
+weight = 40
+youtube_id = 'dQw4w9WgXcQ' # YouTube video ID'sini buraya yaz 
++++
 
 Solohab havuzundaki ürünlerinizin pazar yerlerinde (Trendyol, n11 vb.) doğru kategoride ve doğru özelliklerle listelenmesi için **"Eşleme"** işlemi hayati önem taşır. Bu makalede, ürünlerinizi pazar yeri standartlarına nasıl uygun hale getireceğinizi öğreneceksiniz.
 

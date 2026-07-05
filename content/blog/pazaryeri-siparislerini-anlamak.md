@@ -1,10 +1,10 @@
----
-title: "Pazaryeri Satışlarında Siparişlerin Ötesine Geçmek: Neden Sadece Entegrasyon Yetmez?"
-date: 2026-05-14T10:00:00+03:00
-draft: false
-description: "Pazaryeri entegrasyonunda sipariş yönetimi ve finansal verilerin önemi."
-image: "/img/pazaryeri-siparislerini-anlamak.jpg"
----
++++
+title = "Pazaryeri Satışlarında Siparişlerin Ötesine Geçmek: Neden Sadece Entegrasyon Yetmez?"
+date = 2026-05-14T10:00:00+03:00
+draft = false
+description = "Pazaryeri entegrasyonunda sipariş yönetimi ve finansal verilerin önemi."
+image = "/img/pazaryeri-siparislerini-anlamak.jpg"
++++
 
 Satıcılar olarak ürünlerimizi hazırlayıp pazaryerine yüklüyor; satış yapabilmek için reklam ve kampanya gibi birçok süreci yönetiyoruz. Tüm bu çabanın nihai çıktısı ise **siparişlerdir.** Ancak çoğu zaman siparişleri sadece birer paketleme işlemi olarak görüyoruz. Oysa girdiyi doğru planlamak için çıktıya, yani sipariş verisine bakmak gerekir.
 

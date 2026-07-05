@@ -1,10 +1,10 @@
----
-title: "Pazaryeri Entegrasyonunda Sürdürülebilirlik: Trendyol 'Origin' Alanı Değişikliği ve Solohab Örneği"
-date: "2026-05-20T14:48:07+03:00"
-draft: false
-description: "Pazaryeri entegrasyonunda sipariş yönetimi ve finansal verilerin önemi."
-image: "/img/entegrasyonda-surdurulebilirlik.jpg"
----
++++
+title = "Pazaryeri Entegrasyonunda Sürdürülebilirlik: Trendyol 'Origin' Alanı Değişikliği ve Solohab Örneği"
+date = "2026-05-20T14:48:07+03:00"
+draft = false
+description = "Pazaryeri entegrasyonunda sipariş yönetimi ve finansal verilerin önemi."
+image = "/img/entegrasyonda-surdurulebilirlik.jpg"
++++
 
 Pazaryerlerinde satış yapan günümüzün çok kanallı tüccarları için entegrasyon sistemleri artık bir lüks değil; işi devam ettirmek, büyütmek ve rekabette kalabilmek için olmazsa olmaz bir araç haline gelmiştir. Çok kanallı entegrasyon yazılımları, sadece ürünleri pratik bir şekilde doğru kanala aktarmakla kalmaz; anlık stok/fiyat takibini yapar ve tüm siparişleri ortak bir panele getirerek sizi devasa bir zaman maliyetinden kurtarır.
 

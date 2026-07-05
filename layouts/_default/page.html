@@ -1,0 +1,36 @@
+{{ define "main" }}
+<section id="{{ .Params.section_id }}" class="py-8">
+    <div class="px-6 max-w-7xl mx-auto">
+        <div class="mb-8">
+            <span
+                class="inline-flex items-center gap-2 py-1.5 px-4 text-xs font-semibold tracking-wider uppercase text-stone-600 rounded-full border border-stone-200 bg-white"
+            >
+                <span class="relative flex h-2 w-2">
+                    <span
+                        class="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75"
+                    ></span>
+                    <span
+                        class="relative inline-flex h-2 w-2 rounded-full bg-red-600"
+                    ></span>
+                </span>
+                {{ .Params.eyebrow }}
+            </span>
+        </div>
+
+        <h1
+            class="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 mb-5 max-w-3xl"
+        >
+            {{ .Params.heading_accent }}
+            <span class="text-stone-400">{{ .Params.heading }}</span>
+        </h1>
+
+        <p class="text-lg md:text-xl text-slate-500 leading-relaxed max-w-2xl">
+            {{ .Params.intro | markdownify }}
+        </p>
+
+        <hr class="mt-10 border-slate-200" />
+    </div>
+
+    {{ .Content }}
+</section>
+{{ end }}

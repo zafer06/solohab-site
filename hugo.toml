@@ -30,5 +30,5 @@ googleAnalytics = "G-5BSRWP41PJ"
 
 [[menu.main]]
     name = "Hakkında"
-    url = "/hakkinda/"
+    url = "/about/"
     weight = 4

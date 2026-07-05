@@ -1,9 +1,10 @@
----
-date: 2026-03-20T12:08:36Z
-draft: false
-title: 'Trendyol Mağaza Tanımlama Rehberi'
-weight: 30
----
++++
+date = 2026-03-20T12:08:36Z
+draft = false
+title = 'Trendyol Mağaza Tanımlama Rehberi'
+category = "Mağaza Kurulumu"
+weight = 30
++++
 
 Solohab üzerinden Trendyol mağazanızı yönetmek, stoklarınızı anlık olarak güncellemek ve sipariş operasyonunuzu hızlandırmak için Trendyol API bağlantısını kurmanız gerekmektedir. Bu rehberde, Trendyol mağazanızı Solohab sistemine nasıl entegre edeceğinizi adım adım inceleyeceğiz.
 

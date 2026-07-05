@@ -1,6 +1,7 @@
 +++
-date = '2026-03-20T12:13:41Z'
-draft = false
-title = 'Blog'
+title = "E-Ticaret Stratejileri"
+eyebrow = "Solohab Blog"
+heading_accent = "E-Ticaret"
+heading = "Stratejileri"
+intro = "Satışlarınızı artıracak **global trendler** ve **e-ticaret** dünyasından güncel içgörülerle işinizi bir adım öne taşıyın."
 +++
-

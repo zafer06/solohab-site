@@ -1,0 +1,15 @@
+# Solohab
+
+> Trendyol, Hepsiburada ve diğer pazaryerleri için e-ticaret entegrasyon ve otomasyon platformu.
+
+Solohab, satıcıların birden fazla pazaryerinde ürün, stok, fiyat ve sipariş yönetimini tek bir merkezden yapmasını sağlar. Rate limit yönetimi, otomatik fiyat/stok senkronizasyonu ve sipariş takibi gibi özellikler sunar.
+
+## Docs
+
+- [Özellikler](https://solohab.com/ozellikler): Platformun sunduğu tüm entegrasyon özellikleri
+- [Blog](https://solohab.com/blog): Pazaryeri entegrasyonu, rate limit ve e-ticaret operasyonları hakkında yazılar
+- [Fiyatlandırma](https://solohab.com/fiyatlandirma): Plan ve fiyat bilgileri
+
+## Optional
+
+- [Destek](https://solohab.com/destek): Sık sorulan sorular ve destek dokümanları

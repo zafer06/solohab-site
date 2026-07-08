@@ -40,7 +40,7 @@ Bir düşünün; masanızda çok yoğun bir şekilde çalışıyorsunuz ve o sı
     birlikte tıkır tıkır yönetiriz."
 
 
-## 429 Too Many Requests Hatası Nedir? Paranızı ve Mağazanızı Nasıl Riski Atar?
+## 429 Too Many Requests Hatası Nedir? Paranızı ve Mağazanızı Nasıl Riske Atar?
 
 Belki sizin veya bir satıcı arkadaşınızın başına gelmiştir: Entegrasyon üzerinden fiyat güncellemek için yüzlerce ürün gönderilir, bir kısmının fiyatı güncellenir ama bir kısmı eski fiyatta kalır. Daha da kötüsü, sistem güncellenmeyen ürünler için bir hata uyarısı vermez ve satıcı bunu günler sonra, zararına satış yaptığında fark eder!
 

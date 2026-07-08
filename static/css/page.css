@@ -1,0 +1,708 @@
+/* Ana Bölüm ve Yerleşim (py-8) */
+.content-page-section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Üst Başlık Konteyneri (px-6 max-w-7xl mx-auto) */
+.page-intro-header {
+    max-width: 80rem; /* 1280px */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    box-sizing: border-box;
+}
+
+/* Rozet Sarıcı (mb-8) */
+.eyebrow-container {
+    margin-bottom: 2rem;
+}
+
+/* Canlı Efektli Rozet (inline-flex items-center...) */
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.375rem 1rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #57534e; /* text-stone-600 */
+    border-radius: 9999px;
+    border: 1px solid #e7e5e4; /* border-stone-200 */
+    background-color: #ffffff;
+}
+
+/* Sinyal Efekti Yapısı (relative flex h-2 w-2) */
+.pulse-indicator {
+    position: relative;
+    display: flex;
+    height: 0.5rem;
+    width: 0.5rem;
+}
+
+.pulse-ring {
+    position: absolute;
+    display: inline-flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 9999px;
+    background-color: #f87171; /* bg-red-400 */
+    opacity: 0.75;
+    animation: badgePulse 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.pulse-dot {
+    position: relative;
+    display: inline-flex;
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 9999px;
+    background-color: #dc2626; /* bg-red-600 */
+}
+
+@keyframes badgePulse {
+    75%,
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+/* Ana Başlık (text-3xl md:text-5xl font-bold tracking-tight text-slate-900 mb-5 max-w-3xl) */
+.page-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    color: #0f172a; /* text-slate-900 */
+    margin-top: 0;
+    margin-bottom: 1.25rem; /* mb-5 */
+    max-width: 48rem; /* max-w-3xl */
+    line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+    .page-title {
+        font-size: 3rem; /* md:text-5xl */
+    }
+}
+
+.title-light {
+    color: #a8a29e; /* text-stone-400 */
+}
+
+/* Kısa Tanıtım Yazısı (text-lg md:text-xl text-slate-500 leading-relaxed max-w-2xl) */
+.page-description {
+    font-size: 1.125rem;
+    color: #64748b; /* text-slate-500 */
+    line-height: 1.625;
+    max-width: 42rem; /* max-w-2xl */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .page-description {
+        font-size: 1.25rem; /* md:text-xl */
+    }
+}
+
+/* Ayırıcı Çizgi (mt-10 border-slate-200) */
+.page-divider {
+    margin-top: 2.5rem; /* mt-10 */
+    margin-bottom: 0;
+    border: 0;
+    border-top: 1px solid #e2e8f0; /* border-slate-200 */
+}
+
+/* Dinamik İçeriği Kapsayan Alt Konteyner (Genişlik uyumu için) */
+.page-dynamic-body {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 2.5rem;
+    box-sizing: border-box;
+}
+
+/* Ana Sayfa Konteyneri (max-w-7xl mx-auto px-6 py-12) */
+.pricing-container {
+    width: 100%;
+    max-width: 80rem; /* 1280px */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    box-sizing: border-box;
+}
+
+/* Fiyatlandırma Grid Yapısı (grid grid-cols-1 md:grid-cols-3 gap-8 mt-12) */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+    .pricing-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+/* Ortak Kart Tasarımı */
+.pricing-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0; /* border-slate-200 */
+    border-radius: 1rem; /* rounded-2xl */
+    padding: 2rem; /* p-8 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* shadow-sm */
+    transition: box-shadow 0.2s ease;
+    box-sizing: border-box;
+}
+
+.pricing-card:hover {
+    box-shadow:
+        0 4px 6px -1px rgba(0, 0, 0, 0.05),
+        0 2px 4px -1px rgba(0, 0, 0, 0.03); /* hover:shadow-md */
+}
+
+/* Öne Çıkarılan / Popüler Kart İstisnası */
+.pricing-card.card-featured {
+    position: relative;
+    border: 2px solid #0f172a; /* border-2 border-slate-900 */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); /* shadow-md */
+}
+
+@media (min-width: 768px) {
+    .pricing-card.card-featured {
+        transform: translateY(-0.5rem); /* md:-translate-y-2 */
+    }
+}
+
+/* En Popüler Rozeti */
+.badge-featured {
+    position: absolute;
+    top: -0.75rem; /* -top-3 */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0f172a; /* bg-slate-900 */
+    color: #ffffff;
+    font-size: 0.75rem; /* text-xs */
+    font-weight: 700; /* font-bold */
+    padding: 0.25rem 0.75rem; /* px-3 py-1 */
+    border-radius: 9999px; /* rounded-full */
+    text-transform: uppercase;
+    letter-spacing: 0.05em; /* tracking-wider */
+}
+
+/* Kart İçi Düzen Elemanları */
+.card-top-content {
+    width: 100%;
+}
+
+.package-name {
+    font-size: 1.25rem; /* text-xl */
+    font-weight: 700; /* font-bold */
+    color: #0f172a; /* text-slate-900 */
+    margin-top: 0;
+    margin-bottom: 0.5rem; /* mb-2 */
+}
+
+.package-desc {
+    font-size: 0.875rem; /* text-sm */
+    color: #64748b; /* text-slate-500 */
+    margin-top: 0;
+    margin-bottom: 1.5rem; /* mb-6 */
+    line-height: 1.4;
+}
+
+.package-price {
+    font-size: 2.25rem; /* text-4xl */
+    font-weight: 800; /* font-extrabold */
+    color: #0f172a; /* text-slate-900 */
+    margin-bottom: 0.5rem; /* mb-2 */
+}
+
+.price-period {
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 400; /* font-normal */
+    color: #64748b; /* text-slate-500 */
+}
+
+.monthly-breakdown {
+    font-size: 0.75rem; /* text-xs */
+    color: #059669; /* text-emerald-600 */
+    font-weight: 500; /* font-medium */
+    margin-top: 0;
+    margin-bottom: 1.5rem; /* mb-6 */
+}
+
+/* Özellik Listeleri */
+.package-features {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 2rem; /* mb-8 */
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem; /* space-y-3 */
+}
+
+.package-features li {
+    font-size: 0.875rem; /* text-sm */
+    color: #475569; /* text-slate-600 */
+}
+
+.package-features li.feature-highlight {
+    font-weight: 500;
+    color: #0f172a; /* text-slate-900 */
+}
+
+/* Butonlar (Satın Al / Başvur) */
+.btn-package {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem; /* py-3 */
+    padding-left: 1rem;
+    padding-right: 1rem; /* px-4 */
+    border-radius: 0.75rem; /* rounded-xl */
+    text-decoration: none;
+    box-sizing: border-box;
+    transition:
+        background-color 0.15s ease,
+        color 0.15s ease;
+}
+
+.btn-secondary {
+    background-color: #f1f5f9; /* bg-slate-100 */
+    color: #334155; /* text-slate-800 */
+}
+
+.btn-secondary:hover {
+    background-color: #e2e8f0; /* hover:bg-slate-200 */
+}
+
+.btn-primary {
+    background-color: #0f172a; /* bg-slate-900 */
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #1e293b; /* hover:bg-slate-800 */
+}
+
+/* Paket Altı Bilgilendirmeler (mt-16 flex flex-wrap...) */
+.pricing-notices {
+    margin-top: 4rem; /* mt-16 */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2rem; /* gap-x-8 */
+    row-gap: 0.75rem; /* gap-y-3 */
+    font-size: 0.875rem; /* text-sm */
+    color: #64748b; /* text-slate-500 */
+}
+
+.notice-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* gap-2 */
+}
+
+.notice-item svg {
+    flex-shrink: 0; /* shrink-0 */
+}
+
+.icon-slate {
+    color: #94a3b8;
+} /* text-slate-400 */
+.icon-emerald {
+    color: #10b981;
+} /* text-emerald-500 */
+
+/* --- SIKÇA SORULAN SORULAR (FAQ) --- */
+.faq-section {
+    margin-top: 5rem; /* mt-20 */
+    max-w: 48rem; /* max-w-3xl */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.faq-title {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: 700;
+    color: #0f172a;
+    text-align: center;
+    margin-bottom: 2rem; /* mb-8 */
+}
+
+.faq-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem; /* space-y-3 */
+}
+
+.faq-item {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0; /* border-slate-200 */
+    border-radius: 1rem; /* rounded-2xl */
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem; /* px-6 py-4 */
+    box-sizing: border-box;
+    transition: box-shadow 0.2s ease;
+}
+
+/* HTML5 open niteliği tetiklendiğinde (open:shadow-sm) */
+.faq-item[open] {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.faq-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font-weight: 500;
+    color: #0f172a; /* text-slate-900 */
+    list-style: none; /* list-none */
+}
+
+/* Webkit tarayıcılarda summary varsayılan ok işaretini kaldırma */
+.faq-summary::-webkit-details-marker {
+    display: none;
+}
+
+.icon-chevron {
+    width: 1.25rem;
+    height: 1.25rem; /* w-5 h-5 */
+    color: #94a3b8; /* text-slate-400 */
+    transition: transform 0.2s ease;
+}
+
+/* Akordeon açıldığında artı işaretini döndürme (group-open:rotate-45) */
+.faq-item[open] .icon-chevron {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    margin-top: 0.75rem; /* mt-3 */
+    font-size: 0.875rem; /* text-sm */
+    color: #64748b; /* text-slate-500 */
+    line-height: 1.625; /* leading-relaxed */
+    margin-bottom: 0;
+}
+
+/*============================================================
+    ABOUT SECTION CSS CODES
+=============================================================*/
+/* Ana Kapsayıcı (max-w-7xl mx-auto px-6 py-12) */
+.about-contact-container {
+    width: 100%;
+    max-width: 80rem; /* 1280px */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    box-sizing: border-box;
+}
+
+/* Izgara Yerleşimi (grid grid-cols-1 lg:grid-cols-12 gap-16) */
+.about-contact-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 4rem; /* gap-16 */
+}
+
+@media (min-width: 1024px) {
+    .about-contact-grid {
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+    .about-main-content {
+        grid-column: span 7 / span 7; /* lg:col-span-7 */
+    }
+    .contact-sidebar {
+        grid-column: span 5 / span 5; /* lg:col-span-5 */
+    }
+}
+
+/* --- SOL SÜTUN: METİN ALANLARI --- */
+.about-main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-lead-text {
+    font-size: 1.25rem; /* text-xl */
+    font-weight: 500; /* font-medium */
+    color: #0f172a; /* text-slate-900 */
+    line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 2rem; /* mb-8 */
+}
+
+.about-paragraph {
+    font-size: 1.125rem; /* prose-lg */
+    color: #475569; /* text-slate-600 */
+    line-height: 1.75;
+    margin-top: 0;
+    margin-bottom: 2rem; /* mb-8 */
+}
+
+.about-subheading {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: 700; /* font-bold */
+    color: #0f172a; /* text-slate-900 */
+    margin-top: 2.5rem; /* mt-10 */
+    margin-bottom: 1rem; /* mb-4 */
+}
+
+/* İstatistik Alanı (grid grid-cols-2 gap-8 my-10 p-8...) */
+.stats-box-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    padding: 2rem;
+    background-color: #f8fafc; /* bg-slate-50 */
+    border: 1px solid #f1f5f9; /* border-slate-100 */
+    border-radius: 1.5rem; /* rounded-3xl */
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.stat-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-number {
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 0.25rem;
+}
+
+.stat-label {
+    font-size: 0.875rem; /* text-sm */
+    color: #64748b; /* text-slate-500 */
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.about-footer-quote {
+    font-style: italic;
+    color: #64748b; /* text-slate-500 */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* --- SAĞ SÜTUN: DESTEK VE İLETİŞİM KARTLARI --- */
+.contact-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* space-y-6 */
+}
+
+.support-card {
+    background-color: #ffffff;
+    border: 1px solid #f1f5f9; /* border-slate-100 */
+    border-radius: 2rem; /* rounded-[2rem] */
+    padding: 1.5rem; /* p-6 */
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+    transition:
+        box-shadow 0.5s ease,
+        transform 0.5s ease;
+}
+
+.support-card-flex {
+    display: flex;
+    align-items: start;
+    gap: 1.25rem; /* gap-5 */
+}
+
+/* İkon Taşıyıcıları */
+.support-icon-wrapper {
+    width: 3rem;
+    height: 3rem; /* w-12 h-12 */
+    border-radius: 1rem; /* rounded-2xl */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition:
+        background-color 0.5s ease,
+        color 0.5s ease;
+}
+
+.icon-svg {
+    width: 1.5rem;
+    height: 1.5rem; /* w-6 h-6 */
+}
+
+.icon-bg-blue {
+    background-color: #eff6ff;
+    color: #2563eb;
+}
+.icon-bg-green {
+    background-color: #f0fdf4;
+    color: #16a34a;
+}
+
+/* Kartların Hover Etkileri */
+.card-phone:hover {
+    box-shadow: 0 20px 25px -5px rgba(226, 232, 240, 0.5); /* hover:shadow-slate-200/50 */
+}
+.card-phone:hover .support-icon-wrapper {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+.card-whatsapp:hover {
+    box-shadow: 0 20px 25px -5px rgba(220, 252, 231, 0.5); /* hover:shadow-green-100/50 */
+}
+.card-whatsapp:hover .support-icon-wrapper {
+    background-color: #25d366;
+    color: #ffffff;
+}
+
+/* Kart İçeriği */
+.support-card-body {
+    flex: 1;
+}
+
+.support-card-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-top: 0;
+    margin-bottom: 0.25rem; /* mb-1 */
+}
+
+.support-card-desc {
+    font-size: 0.75rem; /* text-xs */
+    color: #64748b;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 1rem; /* mb-4 */
+}
+
+.support-card-desc.desc-sm {
+    font-size: 0.6875rem; /* text-[11px] */
+}
+
+/* Linkler ve Ok Efektleri */
+.support-link {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 700;
+    text-decoration: none;
+    transition:
+        color 0.2s ease,
+        gap 0.2s ease;
+}
+
+.support-link.link-blue {
+    color: #2563eb;
+}
+.support-link.link-green {
+    font-size: 0.8125rem;
+    color: #16a34a;
+} /* text-[13px] */
+
+.link-arrow-icon {
+    width: 1rem;
+    height: 1rem; /* w-4 h-4 */
+    margin-left: 0.25rem;
+    transition: transform 0.2s ease;
+}
+
+.support-link:hover {
+    gap: 0.5rem;
+}
+.support-link:hover .link-arrow-icon {
+    transform: translateX(4px);
+}
+
+/* --- KURUMSAL BİLGİ KARTI SAKLAMA ALANI --- */
+.card-corporate {
+    padding: 2rem; /* p-8 */
+}
+
+.card-corporate:hover {
+    box-shadow: 0 20px 25px -5px rgba(254, 226, 226, 0.5); /* hover:shadow-red-100/50 */
+}
+
+.corporate-info-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* space-y-6 */
+}
+
+.corporate-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* gap-4 */
+}
+
+.corporate-icon-box {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.corporate-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: #94a3b8;
+}
+
+.corporate-label {
+    font-size: 0.625rem; /* text-[10px] */
+    font-weight: 700;
+    color: #94a3b8; /* text-slate-400 */
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.corporate-link {
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 700;
+    color: #0f172a;
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+.corporate-link:hover {
+    color: #475569; /* Hoverda yumuşak koyu gri */
+}
+
+.corporate-divider {
+    height: 1px;
+    width: 100%;
+    background-color: #f1f5f9; /* h-px w-full */
+}

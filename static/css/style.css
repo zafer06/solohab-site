@@ -1,109 +1,346 @@
-html {
-    scroll-behavior: smooth;
+/* ==========================================================================
+   Solohab Ana Stil Dosyası (Klasik Saf CSS Yapısı)
+   ========================================================================== */
+
+/* 1. Reset ve Global Kurallar */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.prose {
-    color: #475569;
-    font-size: 1.125rem;
-    line-height: 1.9;
-    max-width: 100%;
+body {
+    background-color: #fffcfc; /* Kemik/Krem beyazı */
+    color: #0f172a; /* Slate 900 koyu gri */
+    font-family: "Inter", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
 }
 
-/* Başlıklar */
-
-.prose h1,
-.prose h2,
-.prose h3,
-.prose h4 {
-    color: #0f172a;
-    font-weight: 800;
-    letter-spacing: -0.03em;
-    line-height: 1.25;
+/* Sayfa İçerik Alanı Temsili */
+.content-wrapper {
+    min-height: 60vh;
 }
 
-.prose h1 {
-    font-size: 2.5rem;
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
+/* 2. Düzen Bileşenleri (Layout) */
+.container {
+    max-width: 80rem; /* 1280px (max-w-7xl) */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
-/* h2 artık eski h3 boyutunda (Zarif ve dengeli) */
-.prose h2 {
-    font-size: 1.5rem; /* 2rem'den 1.5rem'e düşürüldü */
-    margin-top: 3.5rem;
-    margin-bottom: 0.75rem; /* Boşluğu da h3'e göre daraltıldı */
+@media (min-width: 768px) {
+    .container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
 }
 
-/* h2 küçüldüğü için h3'ü de bir tık alta çektik */
-.prose h3 {
-    font-size: 1.25rem; /* 1.5rem'den 1.25rem'e düşürüldü */
-    margin-top: 2.5rem;
-    margin-bottom: 0.75rem;
+/* 3. Footer (Alt Bilgi) Alanı */
+.site-footer {
+    background-color: #020617; /* Slate 950 */
+    color: #cbd5e1; /* Slate 300 */
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    border-top: 1px solid #0f172a; /* Border Slate 900 */
 }
 
-/* En alt kırılım başlığı */
-.prose h4 {
-    font-size: 1.125rem; /* 1.25rem'den 1.125rem'e düşürüldü */
-    margin-top: 2rem;
-    margin-bottom: 0.5rem;
+@media (min-width: 1024px) {
+    .site-footer {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
 }
 
-/* Paragraflar */
-
-.prose p {
-    margin: 1.4rem 0;
+/* Footer Izgara (Grid) Yapısı */
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem; /* gap-12 */
 }
 
-/* Link */
+@media (min-width: 768px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
-.prose a {
-    color: #2563eb;
+@media (min-width: 1024px) {
+    .footer-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem; /* gap-8 */
+    }
+}
+
+/* Footer Kolonları */
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* gap-4 */
+}
+
+.brand-col {
+    gap: 1.5rem; /* gap-6 */
+}
+
+/* 4. Logo ve Marka Bileşenleri */
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     text-decoration: none;
+}
+
+.brand-logo-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.75rem;
+    background: linear-gradient(
+        135deg,
+        #dc2626 0%,
+        #991b1b 100%
+    ); /* Marka Kırmızısı */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    box-shadow: 0 10px 15px -3px rgba(220, 38, 38, 0.2);
+}
+
+.brand-logo-icon svg {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.brand-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    color: #ffffff;
+}
+
+.brand-description {
+    color: #94a3b8; /* Slate 400 */
+    font-size: 0.875rem;
+    line-height: 1.625;
+    max-width: 20rem;
+}
+
+/* 5. Menüler ve Link Grupları */
+.footer-heading {
+    color: #ffffff;
+    font-size: 1.125rem;
     font-weight: 600;
 }
 
-.prose a:hover {
-    text-decoration: underline;
+.footer-links,
+.footer-contact-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Liste */
-
-.prose ul,
-.prose ol {
-    margin: 1.5rem 0;
-    padding-left: 1.75rem;
+.footer-links {
+    gap: 0.75rem; /* gap-3 */
 }
 
-.prose li {
-    margin: 0.7rem 0;
+.footer-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 0.875rem;
+    transition: color 0.2s ease;
+    width: fit-content;
 }
 
-/* Görsel */
-
-.prose img {
-    width: 100%;
-    border-radius: 16px;
-    margin: 3rem 0;
+.footer-links a:hover {
+    color: #dc2626; /* Hover rengi marka kırmızısı */
 }
 
-/* Alıntı */
+/* 6. İletişim Detayları */
+.footer-contact-list {
+    gap: 1rem; /* gap-4 */
+}
 
-.prose blockquote {
-    border-left: 4px solid #2563eb;
-    padding-left: 1.5rem;
-    margin: 2rem 0;
-    color: #334155;
+.contact-item {
+    display: flex;
+    align-items: start;
+    gap: 0.75rem;
+}
+
+.icon-red {
+    color: #dc2626 !important; /* Marka kırmızısı ikonlar */
+    width: 1.25rem;
+    height: 1.25rem;
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+}
+
+.contact-text {
+    font-size: 0.875rem;
+    line-height: 1.625;
+}
+
+.contact-sub-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.whatsapp-link {
+    font-size: 0.75rem;
+    color: #10b981; /* Zümrüt Yeşili */
+    text-decoration: none;
+    margin-top: 0.25rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+    width: fit-content;
+}
+
+.whatsapp-link:hover {
+    color: #34d399;
+}
+
+/* 7. Alt Bilgi Çizgisi ve Hukuki Linkler (Footer Bottom) */
+.footer-bottom {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid #0f172a;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 0.875rem;
+    color: #64748b; /* Slate 500 */
+}
+
+@media (min-width: 768px) {
+    .footer-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.footer-bottom strong {
+    color: #94a3b8;
+}
+
+.footer-legal-links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; /* gap-6 */
+    flex-wrap: wrap;
+}
+
+.footer-legal-links a {
+    color: #64748b;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-legal-links a:hover {
+    color: #ffffff;
+}
+
+/* ==========================================================================
+   Navbar Bileşeni (style.css içerisine eklenebilir)
+   ========================================================================== */
+
+.main-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2rem; /* py-6 px-8 */
+    max-width: 80rem; /* max-w-7xl (1280px) */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 1. Logo */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.05em;
     font-style: italic;
 }
 
-/* Kod */
-
-.prose pre {
-    margin: 2rem 0;
-    border-radius: 12px;
-    padding: 1.25rem;
+.navbar-logo {
+    height: 2rem; /* h-8 */
+    width: auto;
 }
 
-.prose code {
-    font-size: 0.95em;
+/* 2. Orta Menü Linkleri */
+.navbar-menu {
+    display: none; /* Mobil öncelikli tasarım: Mobilde gizle */
+    gap: 2rem; /* space-x-8 */
+}
+
+@media (min-width: 768px) {
+    .navbar-menu {
+        display: flex; /* md:flex */
+    }
+}
+
+.menu-link {
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 500; /* font-medium */
+    color: #475569; /* text-slate-600 */
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.menu-link:hover,
+.menu-link.active {
+    color: #dc2626; /* hover:text-brand & active hali (Kırmızı) */
+}
+
+/* 3. Sağ Taraf - Giriş ve Kayıt Butonları */
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem; /* gap-3 */
+}
+
+/* Giriş Yap Butonu */
+.btn-login {
+    display: none; /* sm:block öncesi mobilde gizli tutuyoruz */
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #475569;
+    padding: 0.625rem 1.25rem; /* py-2.5 px-5 */
+    text-decoration: none;
+    border-radius: 9999px;
+    transition: color 0.3s ease;
+}
+
+@media (min-width: 640px) {
+    .btn-login {
+        display: block; /* sm:block */
+    }
+}
+
+.btn-login:hover {
+    color: #dc2626; /* hover:text-brand */
+}
+
+/* Ücretsiz Kayıt Butonu */
+.btn-register {
+    font-size: 0.875rem;
+    font-weight: 600;
+    background-color: #0f172a; /* bg-slate-900 */
+    color: #ffffff;
+    padding: 0.625rem 1.5rem; /* py-2.5 px-6 */
+    text-decoration: none;
+    border-radius: 9999px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-register:hover {
+    background-color: #dc2626; /* hover:bg-brand */
+    box-shadow:
+        0 4px 6px -1px rgba(220, 38, 38, 0.2),
+        0 2px 4px -1px rgba(220, 38, 38, 0.1);
 }

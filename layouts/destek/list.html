@@ -1,65 +1,45 @@
+{{ define "css" }}
+    <link rel="stylesheet" href="/css/support.css">
+{{ end }}
+
 {{ define "main" }}
-<section id="destekList" class="py-8">
-    <div class="px-6 max-w-7xl mx-auto">
-        <div class="mb-8">
-            <span
-                class="inline-flex items-center gap-2 py-1.5 px-4 text-xs font-semibold tracking-wider uppercase text-stone-600 rounded-full border border-stone-200 bg-white"
-            >
-                <span class="relative flex h-2 w-2">
-                    <span
-                        class="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75"
-                    ></span>
-                    <span
-                        class="relative inline-flex h-2 w-2 rounded-full bg-red-600"
-                    ></span>
+<section id="destekList" class="support-section">
+    <div class="support-header-container">
+        <div class="badge-wrapper">
+            <span class="badge-status">
+                <span class="ping-container">
+                    <span class="ping-pulse"></span>
+                    <span class="ping-dot"></span>
                 </span>
                 {{ .Params.eyebrow }}
             </span>
         </div>
-        <h1
-            class="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 mb-5 max-w-3xl"
-        >
+        <h1 class="support-main-title">
             {{ .Params.heading_accent }}
-            <span class="text-stone-400">{{ .Params.heading }}</span>
+            <span class="text-muted-accent">{{ .Params.heading }}</span>
         </h1>
-        <p class="text-lg md:text-xl text-slate-500 leading-relaxed max-w-2xl">
+        <p class="support-intro">
             {{ .Params.intro | markdownify }}
         </p>
-        <hr class="mt-10 border-slate-200" />
+        <hr class="support-divider" />
     </div>
 
-    <div class="max-w-7xl mx-auto px-6 py-12">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div class="support-grid-container">
+        <div class="support-grid">
             {{ range .Pages }}
-            <a
-                href="{{ .RelPermalink }}"
-                class="group flex items-center justify-between gap-4 p-6 bg-white rounded-2xl border border-slate-200 transition-all duration-300 hover:border-slate-300 hover:ring-1 hover:ring-slate-300 hover:shadow-md"
-            >
-                <div>
-                    <span
-                        class="inline-block text-[11px] font-semibold text-red-700 bg-red-50 px-2.5 py-1 rounded-full uppercase tracking-wide"
-                    >
+            <a href="{{ .RelPermalink }}" class="support-card-link group">
+                <div class="card-content-left">
+                    <span class="card-category-badge">
                         {{ .Params.category | default "Genel" }}
                     </span>
-                    <h3 class="font-bold text-slate-900 mt-2.5">
+                    <h3 class="card-doc-title">
                         {{ .Title }}
                     </h3>
-                    <p class="text-sm text-slate-500 mt-1">
+                    <p class="card-doc-subtext">
                         Yardım dökümanını görüntüle
                     </p>
                 </div>
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="text-slate-300 group-hover:text-slate-900 group-hover:translate-x-1 transition-all shrink-0"
-                >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="card-arrow-icon">
                     <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
             </a>
@@ -67,32 +47,19 @@
         </div>
     </div>
 
-    <!-- DESTEK BILGI KUTULARI ALT BILGILER -->
-    <div
-        class="mt-16 bg-stone-50 border border-stone-100 rounded-3xl p-10 md:p-14 text-center"
-    >
-        <h2 class="text-2xl font-bold text-slate-900 mb-3">
+    <div class="support-footer-box">
+        <h2 class="footer-box-title">
             Aradığınızı bulamadınız mı?
         </h2>
-        <p class="text-stone-500 max-w-md mx-auto mb-8">
-            Ekibimiz, karşılaştığınız her türlü teknik soruda size yardımcı
-            olmaktan mutluluk duyar.
+        <p class="footer-box-text">
+            Ekibimiz, karşılaştığınız her türlü teknik soruda size yardımcı olmaktan mutluluk duyar.
         </p>
-        <div
-            class="flex flex-col sm:flex-row items-center justify-center gap-4"
-        >
-            <a
-                href="https://wa.me/905511757435"
-                target="_blank"
-                class="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold text-sm px-6 py-3 rounded-full transition-colors"
-            >
+        <div class="footer-btn-group">
+            <a href="https://wa.me/905511757435" target="_blank" class="btn-support-red">
                 WhatsApp'tan Yazın
             </a>
 
-            <a
-                href="mailto:destek@solokod.com"
-                class="inline-flex items-center gap-2 text-stone-600 hover:text-stone-900 font-semibold text-sm px-6 py-3 rounded-full border border-stone-200 hover:border-stone-300 transition-colors"
-            >
+            <a href="mailto:destek@solokod.com" class="btn-support-outline">
                 E-posta Gönderin
             </a>
         </div>

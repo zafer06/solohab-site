@@ -1,118 +1,123 @@
+{{ define "css" }}
+    <link rel="stylesheet" href="/css/home.css">
+{{ end }}
+
 {{ define "main" }}
 <!-- HERO SECTION -->
-<section class="relative px-6 pt-16 pb-24 md:pt-32 md:pb-40 overflow-hidden">
-    <div class="max-w-4xl mx-auto text-center relative z-10">
-        <span class="inline-block py-1.5 px-4 mb-6 text-xs font-bold tracking-widest text-brand uppercase bg-red-50 rounded-full border border-red-100">
+<section class="hero-section">
+    <div class="hero-container">
+        <span class="badge-mini">
             Mini Pazaryeri Çözümü
         </span>
 
-        <h1 class="text-5xl md:text-7xl font-bold tracking-tight text-slate-900 mb-8 leading-[1.1]">
+        <h1 class="hero-title">
             Tüm pazaryerlerini
             <br />
-            <span class="text-brand">tek merkezden</span>
+            <span class="text-brand-color">tek merkezden</span>
             yönetin.
         </h1>
 
-        <!-- TEDARİKÇİ & BAYİ VURGULU GÜNCELLENMİŞ HEDEF METİN -->
-        <p class="text-lg md:text-xl text-slate-600 mb-10 max-w-3xl mx-auto leading-relaxed">
+        <p class="hero-description">
             Solohab ile karmaşık panel süreçlerini geride bırakın. Bayilerin operasyonlarını hızlandırırken;
             tedarikçilerin ürün kataloglarını bayilerine hatasız aktarmasını sağlayan altyapıyı sunuyoruz.
         </p>
 
-        <div class="flex flex-col items-center justify-center gap-4">
-            <a href="https://wa.me/905511757435" target="_blank" class="w-full sm:w-auto px-12 py-5 bg-brand text-white font-bold rounded-2xl shadow-xl shadow-red-200 hover:bg-brandDark hover:scale-[1.05] transition-all duration-300 text-center flex items-center justify-center gap-3 text-lg">
-                <svg class="w-6 h-6 fill-white" viewBox="0 0 24 24">
+        <div class="hero-cta-group">
+            <a href="https://wa.me/905511757435" target="_blank" class="btn-primary-lg">
+                <svg class="whatsapp-icon" viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.889 1.034 4.024 1.58 6.199 1.581h.004c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                 </svg>
                 Hemen Mesaj Atın ve Deneyin
             </a>
 
-            <p class="text-slate-400 text-sm font-medium">
+            <p class="cta-notice">
                 Hesabınız 5 dakika içinde size özel olarak tanımlanır ve bilgileriniz e-posta ile iletilir.
             </p>
         </div>
-        <div class="mt-20">
-            <p class="text-slate-400 font-bold uppercase tracking-[0.3em] mb-8 text-[10px]">
+
+        <div class="integrations-wrapper">
+            <p class="integrations-title">
                 Popüler Entegrasyonlar
             </p>
-            <div class="flex flex-wrap justify-center gap-10 opacity-40 grayscale hover:opacity-100 transition-opacity duration-500">
-                <span class="font-extrabold text-xl italic text-slate-800">Hepsiburada</span>
-                <span class="font-extrabold text-xl italic text-slate-800">Trendyol</span>
-                <span class="font-extrabold text-xl italic text-slate-800">Çiçeksepeti</span>
-                <span class="font-extrabold text-xl italic text-slate-800">N11</span>
-                <span class="font-extrabold text-xl italic text-slate-800">WooCommerce</span>
-                <span class="font-extrabold text-xl italic text-slate-800">XML Kaynaklar</span>
+            <div class="integrations-logos">
+                <span class="logo-item">Hepsiburada</span>
+                <span class="logo-item">Trendyol</span>
+                <span class="logo-item">Çiçeksepeti</span>
+                <span class="logo-item">N11</span>
+                <span class="logo-item">WooCommerce</span>
+                <span class="logo-item">XML Kaynaklar</span>
             </div>
         </div>
     </div>
 
-    <div class="absolute top-0 left-1/2 -translate-x-1/2 -z-0 w-full h-full opacity-20 pointer-events-none">
-        <div class="absolute top-[-5%] right-[15%] w-[300px] h-[300px] bg-brand rounded-full blur-[120px]"></div>
-        <div class="absolute bottom-[10%] left-[10%] w-[250px] h-[250px] bg-orange-200 rounded-full blur-[100px]"></div>
+    <!-- Dekoratif Arka Plan Balonları -->
+    <div class="hero-bg-blobs" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
     </div>
 </section>
 
-<!-- FEATURES SECTION (GRID 4'LÜ YAPILDI) -->
-<section id="features" class="py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-6">
-        <div class="text-center mb-20">
-            <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-                İşinizi kolaylaştıran <span class="text-brand">akıllı özellikler</span>
+<!-- FEATURES SECTION -->
+<section id="features" class="features-section">
+    <div class="container-center">
+        <div class="section-header">
+            <h2 class="section-title">
+                İşinizi kolaylaştıran <span class="text-brand-color">akıllı özellikler</span>
             </h2>
-            <p class="text-slate-600 max-w-2xl mx-auto">
+            <p class="section-subtitle">
                 Solohab, karmaşık süreçleri basitleştirmek ve verimliliğinizi artırmak için ihtiyacınız olan tüm araçları tek bir platformda sunar.
             </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="features-grid">
             <!-- KART 1: ÜRÜN İÇE AKTARIM -->
-            <div class="group p-6 rounded-3xl border border-slate-100 bg-slate-50 hover:bg-white hover:shadow-xl hover:shadow-red-100/50 transition-all duration-300">
-                <div class="w-12 h-12 bg-red-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand transition-colors duration-300">
-                    <svg class="w-6 h-6 text-brand group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="feature-card">
+                <div class="card-icon-wrapper">
+                    <svg class="card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"></path>
                     </svg>
                 </div>
-                <h3 class="text-lg font-bold text-slate-900 mb-3">Ürünleri İçe Aktarım</h3>
-                <p class="text-slate-600 leading-relaxed text-sm">
+                <h3 class="card-title">Ürünleri İçe Aktarım</h3>
+                <p class="card-text">
                     Mevcut WooCommerce mağazanızdaki veya XML kaynağındaki tüm ürünleri, görselleri ve açıklamalarıyla birlikte saniyeler içinde Solohab paneline aktarın.
                 </p>
             </div>
 
-            <!-- YENİ KART 2: TEDARİKÇİ SİLAHINIZ (VARYANT & NİTELİK EŞLEME) -->
-            <div class="group p-6 rounded-3xl border border-brand/20 bg-red-50/30 hover:bg-white hover:shadow-xl hover:shadow-red-100/50 transition-all duration-300">
-                <div class="w-12 h-12 bg-brand text-white rounded-2xl flex items-center justify-center mb-6 shadow-md shadow-red-100">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <!-- KART 2: GELİŞMİŞ NİTELİK EŞLEME -->
+            <div class="feature-card card-highlighted">
+                <div class="card-icon-wrapper">
+                    <svg class="card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
                     </svg>
                 </div>
-                <h3 class="text-lg font-bold text-slate-900 mb-3">Gelişmiş Nitelik Eşleme</h3>
-                <p class="text-slate-600 leading-relaxed text-sm">
+                <h3 class="card-title">Gelişmiş Nitelik Eşleme</h3>
+                <p class="card-text">
                     Tedarikçi XML'indeki renk, beden veya özel varyant yapılarını, pazaryerlerinin zorunlu nitelik formatlarıyla dakikalar içinde ve hatasız eşleyin.
                 </p>
             </div>
 
             <!-- KART 3: PAZARYERİ GÖNDERİMİ -->
-            <div class="group p-6 rounded-3xl border border-slate-100 bg-slate-50 hover:bg-white hover:shadow-xl hover:shadow-red-100/50 transition-all duration-300">
-                <div class="w-12 h-12 bg-red-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand transition-colors duration-300">
-                    <svg class="w-6 h-6 text-brand group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="feature-card">
+                <div class="card-icon-wrapper">
+                    <svg class="card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
                     </svg>
                 </div>
-                <h3 class="text-lg font-bold text-slate-900 mb-3">Pazaryeri Gönderimi</h3>
-                <p class="text-slate-600 leading-relaxed text-sm">
+                <h3 class="card-title">Pazaryeri Gönderimi</h3>
+                <p class="card-text">
                     Gelişmiş filtreleme seçenekleriyle binlerce ürünü tek seferde seçin. Kategori eşlemelerini yaptıktan sonra tüm listenizi pazaryerine hızla aktarın.
                 </p>
             </div>
 
             <!-- KART 4: AKILLI FİYAT DÜZENLEME -->
-            <div class="group p-6 rounded-3xl border border-slate-100 bg-slate-50 hover:bg-white hover:shadow-xl hover:shadow-red-100/50 transition-all duration-300">
-                <div class="w-12 h-12 bg-red-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand transition-colors duration-300">
-                    <svg class="w-6 h-6 text-brand group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="feature-card">
+                <div class="card-icon-wrapper">
+                    <svg class="card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
                     </svg>
                 </div>
-                <h3 class="text-lg font-bold text-slate-900 mb-3">Akıllı Fiyat Düzenleme</h3>
-                <p class="text-slate-600 leading-relaxed text-sm">
+                <h3 class="card-title">Akıllı Fiyat Düzenleme</h3>
+                <p class="card-text">
                     Aktarım esnasında komisyon, kâr marjı ve ek maliyetler otomatik hesaplansın; her pazaryerinde doğru fiyatla yer alın.
                 </p>
             </div>
@@ -121,22 +126,21 @@
 </section>
 
 <!-- CTA SECTION -->
-<section class="py-20 px-6">
-    <div class="max-w-5xl mx-auto bg-brand rounded-[3rem] p-12 md:p-16 text-center relative overflow-hidden shadow-2xl shadow-red-200">
-        <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
-
-        <div class="relative z-10">
-            <h2 class="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight">
+<section class="inline-cta-section">
+    <div class="cta-box">
+        <div class="cta-bg-blur" aria-hidden="true"></div>
+        <div class="cta-content">
+            <h2 class="cta-title">
                 Aklınıza takılanları
-                <br class="hidden md:block" />
+                <br class="br-desktop" />
                 birlikte çözelim.
             </h2>
-            <p class="text-red-100 text-lg mb-10 max-w-xl mx-auto font-medium">
+            <p class="cta-subtitle">
                 Solohab'ın işletmenize nasıl değer katacağını merak ediyorsanız, doğrudan bizimle iletişime geçebilirsiniz.
             </p>
-            <div class="flex justify-center">
-                <a href="https://wa.me/905511757435" target="_blank" class="inline-flex items-center gap-3 px-10 py-5 bg-white text-brand font-bold rounded-2xl hover:bg-slate-50 hover:scale-105 transition-all duration-300 shadow-xl group">
-                    <svg class="w-6 h-6 fill-brand group-hover:rotate-12 transition-transform" viewBox="0 0 24 24">
+            <div class="cta-btn-wrapper">
+                <a href="https://wa.me/905511757435" target="_blank" class="btn-white-lg">
+                    <svg class="whatsapp-icon-dark" viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.889 1.034 4.024 1.58 6.199 1.581h.004c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                     </svg>
                     WhatsApp Üzerinden Sorun
@@ -147,99 +151,90 @@
 </section>
 
 <!-- FAQ SECTION -->
-<section id="faq" class="py-24 bg-slate-50">
-    <div class="max-w-4xl mx-auto px-6">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-                Aklınıza takılan <span class="text-brand">sorular</span>
+<section id="faq" class="faq-section">
+    <div class="faq-container">
+        <div class="section-header">
+            <h2 class="section-title">
+                Aklınıza takılan <span class="text-brand-color">sorular</span>
             </h2>
-            <p class="text-slate-600">
+            <p class="section-subtitle">
                 Solohab hakkında en çok merak edilen konuları bir araya getirdik.
             </p>
         </div>
 
-        <div class="space-y-4">
-            <!-- YENİ TEDARİKÇİ SSS SORUSU -->
-            <div class="bg-white p-6 rounded-2xl border border-brand/30 shadow-sm hover:border-brand transition-all duration-300">
-                <div class="flex items-start gap-4">
-                    <div class="flex-shrink-0 w-6 h-6 rounded-full bg-red-100 flex items-center justify-center mt-1">
-                        <span class="text-brand font-bold text-xs">?</span>
-                    </div>
+        <div class="faq-list">
+            <!-- SSS 1 (Öne Çıkan) -->
+            <div class="faq-item faq-item-highlighted">
+                <div class="faq-box-layout">
+                    <div class="faq-question-badge">?</div>
                     <div>
-                        <h3 class="text-lg font-bold text-slate-900 mb-2">
-                            Tedarikçi olarak bayilerime altyapı sağladığımda teknik destek süreçleri nasıl yürütülüyor?
-                        </h3>
-                        <p class="text-slate-600 text-sm leading-relaxed">
+                        <h3 class="faq-question">Tedarikçi olarak bayilerime altyapı sağladığımda teknik destek süreçleri nasıl yürütülüyor?</h3>
+                        <p class="faq-answer">
                             Bayilerinizin entegrasyon kurulumları, eşlemeleri ve olası API hatalarıyla ilgili tüm teknik destek yükünü SoloHab olarak tamamen biz üstleniyoruz. Kapsamlı Destek Merkezimiz ve canlı destek hattımız sayesinde ekibinize hiçbir operasyonel yük yansımaz.
                         </p>
                     </div>
                 </div>
             </div>
 
-            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:border-brand/30 transition-all duration-300">
-                <div class="flex items-start gap-4">
-                    <div class="flex-shrink-0 w-6 h-6 rounded-full bg-red-100 flex items-center justify-center mt-1">
-                        <span class="text-brand font-bold text-xs">?</span>
-                    </div>
+            <!-- SSS 2 -->
+            <div class="faq-item">
+                <div class="faq-box-layout">
+                    <div class="faq-question-badge">?</div>
                     <div>
-                        <h3 class="text-lg font-bold text-slate-900 mb-2">Nasıl kayıt olabilirim?</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed">
+                        <h3 class="faq-question">Nasıl kayıt olabilirim?</h3>
+                        <p class="faq-answer">
                             Butona tıklayıp bize WhatsApp'tan ulaşmanız yeterli. Sizin için manuel bir hesap tanımlıyor ve giriş bilgilerini e-postanıza gönderiyoruz.
                         </p>
                     </div>
                 </div>
             </div>
 
-            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:border-brand/30 transition-all duration-300">
-                <div class="flex items-start gap-4">
-                    <div class="flex-shrink-0 w-6 h-6 rounded-full bg-red-100 flex items-center justify-center mt-1">
-                        <span class="text-brand font-bold text-xs">?</span>
-                    </div>
+            <!-- SSS 3 -->
+            <div class="faq-item">
+                <div class="faq-box-layout">
+                    <div class="faq-question-badge">?</div>
                     <div>
-                        <h3 class="text-lg font-bold text-slate-900 mb-2">WooCommerce ürünlerimi çekerken stoklar da gelir mi?</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed">
+                        <h3 class="faq-question">WooCommerce ürünlerimi çekerken stoklar da gelir mi?</h3>
+                        <p class="faq-answer">
                             Evet, WooCommerce entegrasyonu ile ürünlerinizin adı, açıklaması, görselleri ve anlık stok bilgileri eksiksiz bir şekilde Solohab paneline aktarılır.
                         </p>
                     </div>
                 </div>
             </div>
 
-            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:border-brand/30 transition-all duration-300">
-                <div class="flex items-start gap-4">
-                    <div class="flex-shrink-0 w-6 h-6 rounded-full bg-red-100 flex items-center justify-center mt-1">
-                        <span class="text-brand font-bold text-xs">?</span>
-                    </div>
+            <!-- SSS 4 -->
+            <div class="faq-item">
+                <div class="faq-box-layout">
+                    <div class="faq-question-badge">?</div>
                     <div>
-                        <h3 class="text-lg font-bold text-slate-900 mb-2">Fiyat kurallarını sonradan değiştirebilir miyim?</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed">
+                        <h3 class="faq-question">Fiyat kurallarını sonradan değiştirebilir miyim?</h3>
+                        <p class="faq-answer">
                             Tabii ki. Tanımladığınız fiyat kurallarını dilediğiniz zaman güncelleyebilirsiniz. Yapılan değişiklikler, kuralların bağlı olduğu kategorilerdeki bir sonraki aktarım işleminizde otomatik olarak uygulanır.
                         </p>
                     </div>
                 </div>
             </div>
 
-            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:border-brand/30 transition-all duration-300">
-                <div class="flex items-start gap-4">
-                    <div class="flex-shrink-0 w-6 h-6 rounded-full bg-red-100 flex items-center justify-center mt-1">
-                        <span class="text-brand font-bold text-xs">?</span>
-                    </div>
+            <!-- SSS 5 -->
+            <div class="faq-item">
+                <div class="faq-box-layout">
+                    <div class="faq-question-badge">?</div>
                     <div>
-                        <h3 class="text-lg font-bold text-slate-900 mb-2">N11 için nitelik eşlemesi zorunlu mu?</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed">
+                        <h3 class="faq-question">N11 için nitelik eşlemesi zorunlu mu?</h3>
+                        <p class="faq-answer">
                             Evet, N11 altyapısı gereği ürün gönderimi için kategori bazlı nitelik eşleşmesi gereklidir. Ancak Solohab'ın toplu seçim ve filtreleme özellikleri sayesinde bu süreci çok daha hızlı yönetebilirsiniz.
                         </p>
                     </div>
                 </div>
             </div>
 
-            <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:border-brand/30 transition-all duration-300">
-                <div class="flex items-start gap-4">
-                    <div class="flex-shrink-0 w-6 h-6 rounded-full bg-red-100 flex items-center justify-center mt-1">
-                        <span class="text-brand font-bold text-xs">?</span>
-                    </div>
+            <!-- SSS 6 -->
+            <div class="faq-item">
+                <div class="faq-box-layout">
+                    <div class="faq-question-badge">?</div>
                     <div>
-                        <h3 class="text-lg font-bold text-slate-900 mb-2">Kaç farklı pazaryeri bağlayabilirim?</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed">
+                        <h3 class="faq-question">Kaç farklı pazaryeri bağlayabilirim?</h3>
+                        <p class="faq-answer">
                             Solohab şu an Türkiye'nin en popüler pazaryerlerini desteklemektedir. Paket özelliklerinize göre birden fazla mağaza ve mecrayı tek bir panelden yönetebilirsiniz.
                         </p>
                     </div>

@@ -18,11 +18,17 @@
 
     <!-- Aksiyon Butonları (Giriş / Kayıt) -->
     <div class="navbar-actions">
-        <a href="https://app.solohab.com/login" class="btn-login">
+        <a href="https://app.solohab.com/login"
+           class="btn-login"
+           onclick="gtag('event', 'login_click');">
             Giriş Yap
         </a>
 
-        <a href="https://app.solohab.com/register" class="btn-register">
+        <a href="https://app.solohab.com/register"
+           class="btn-register"
+           onclick="gtag('event', 'register_click', {
+               method: 'email'
+           });">
             Ücretsiz Kayıt
         </a>
     </div>

@@ -11,24 +11,35 @@ googleAnalytics = "G-5BSRWP41PJ"
 [[menu.main]]
     name = "Giriş"
     url = "/"
-    weight = 1
+    weight = 10
+    identifier = "giris"
 
 [[menu.main]]
     name = "Destek"
     url = "/destek/"
-    weight = 2
+    weight = 20
+    identifier = "destek"
 
 [[menu.main]]
     name = "Blog"
     url = "/blog/"
-    weight = 3
+    weight = 30
+    identifier = "blog"
+
+[[menu.main]]
+    name = "Araçlar"
+    url = "/araclar/"
+    weight = 40
+    identifier = "araclar"
 
 [[menu.main]]
     name = "Ücretler"
     url = "/price/"
-    weight = 3
+    weight = 50
+    identifier = "ucretler"
 
 [[menu.main]]
     name = "Hakkında"
     url = "/about/"
-    weight = 4
+    weight = 60
+    identifier = "hakkinda"
